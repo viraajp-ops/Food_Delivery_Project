@@ -1,10 +1,10 @@
 # Food_Delivery_Project
 
-# Food Delivery Simulation
+# 🍕Food Delivery Simulation
 
 This is a Java-based simulation of a food delivery system that mimics real-world food ordering and dispatching workflows. It includes customers, restaurants, delivery agents, and a central dispatcher to manage orders.
 
-## Features
+## 🧱Features
 
 - **Customers** can place orders to available restaurants.
 - **Restaurants** have menus with item prices.
@@ -13,7 +13,7 @@ This is a Java-based simulation of a food delivery system that mimics real-world
 - **Dynamic Delivery Fee** is calculated based on linear regression using distance between customer and restaurant.
 - **Drivers** move step-by-step to the customer location to simulate real-time delivery.
 
-## How It Works
+## 🚀How It Works
 
 1. **Startup:**
    - Menu and location of restaurants are hardcoded.
@@ -35,7 +35,6 @@ This is a Java-based simulation of a food delivery system that mimics real-world
    - Drivers can be busy due to a delivery or manually (simulating rest or break).
    - A busy driver cannot be reassigned to a new delivery.
 
-## How to Run
 
 1. Clone the repository:
    ```bash
