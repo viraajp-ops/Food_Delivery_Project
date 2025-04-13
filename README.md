@@ -1,24 +1,43 @@
 # Food_Delivery_Project
 
-# 🍕 Food Delivery Simulation (Java)
+# Food Delivery Simulation
 
-A simple Java-based console application that simulates a food delivery system. The system allows customers to place orders at restaurants, and delivery agents are assigned to deliver orders based on availability and proximity.
+This is a Java-based simulation of a food delivery system that mimics real-world food ordering and dispatching workflows. It includes customers, restaurants, delivery agents, and a central dispatcher to manage orders.
 
-## 🚀 Features
+## Features
 
-- Add and manage restaurants with menus.
-- Register and manage customers.
-- Place food orders with optional priority.
-- Automatically assign nearest available delivery agents to orders.
-- Calculate total delivery fee.
-- Command-line interface for user interaction.
+- **Customers** can place orders to available restaurants.
+- **Restaurants** have menus with item prices.
+- **Delivery Agents** are dynamically assigned to orders based on availability and proximity.
+- **Dispatcher** matches accepted orders with the nearest available drivers.
+- **Dynamic Delivery Fee** is calculated based on linear regression using distance between customer and restaurant.
+- **Drivers** move step-by-step to the customer location to simulate real-time delivery.
 
-## 🧱 Project Structure
+## How It Works
 
-- `main.java` — Entry point that sets up data and handles user interaction.
-- `Customer.java` — Handles customer details and order placement.
-- `Restaurant.java` — Stores restaurant info and menu.
-- `Order.java` — Represents an order and its logic.
-- `DeliveryAgent.java` — Represents delivery agents and their availability.
-- `Dispatcher.java` — Singleton class managing order dispatching.
-- `Point.java` — Utility class for coordinates and distance calculation.
+1. **Startup:**
+   - Menu and location of restaurants are hardcoded.
+   - Delivery agents are added with initial coordinates.
+   - Two customers are pre-defined for simplicity.
+
+2. **Order Placement:**
+   - Run the program.
+   - Choose to place an order by selecting customer ID, restaurant ID, menu item, and whether it's a priority order.
+   - A delivery fee is calculated based on distance and item price.
+
+3. **Dispatching Orders:**
+   - Choose to dispatch orders.
+   - Dispatcher finds the nearest **FREE** driver to the restaurant and assigns the order.
+   - Driver "moves" step-by-step to the customer location.
+   - Upon reaching, the order is marked **DELIVERED**, and the driver becomes free.
+
+4. **Driver Behavior:**
+   - Drivers can be busy due to a delivery or manually (simulating rest or break).
+   - A busy driver cannot be reassigned to a new delivery.
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/food-delivery-sim.git
+   cd food-delivery-sim
