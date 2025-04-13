@@ -34,9 +34,3 @@ This is a Java-based simulation of a food delivery system that mimics real-world
 4. **Driver Behavior:**
    - Drivers can be busy due to a delivery or manually (simulating rest or break).
    - A busy driver cannot be reassigned to a new delivery.
-
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/food-delivery-sim.git
-   cd food-delivery-sim
