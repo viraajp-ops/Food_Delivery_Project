@@ -34,3 +34,8 @@ This is a Java-based simulation of a food delivery system that mimics real-world
 4. **Driver Behavior:**
    - Drivers can be busy due to a delivery or manually (simulating rest or break).
    - A busy driver cannot be reassigned to a new delivery.
+
+## Dataset
+
+To run the regression script, download the dataset from the link below and place it in the project directory:
+[Download delhivery.csv](https://www.kaggle.com/datasets/devarajv88/delhivery-logistics-dataset)  
