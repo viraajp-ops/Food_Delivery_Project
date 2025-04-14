@@ -1,3 +1,0 @@
-enum OrderStatus {
-    INITIATED, ACCEPTED, DEPLOYED, DELIVERED
-}

@@ -1,4 +1,0 @@
-
-enum DriverStatus {
-    FREE, BUSY
-}
